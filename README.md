@@ -2,7 +2,7 @@
 Here, I have implemented the famous MineSweeper game using my knowledge of C programming.
 
 This is a single-player game, where you must uncover the squares of the board without stepping (i.e. selecting) a mine.
-------------------------
+
 This was my second game implementation, and the most complex to date, with the main challenges being the implementation of
 1.
 An appropriate grid
