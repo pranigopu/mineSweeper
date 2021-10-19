@@ -54,7 +54,6 @@ int main()
             int flag = 0;
             do
             {
-                printf("\nfreeplaces = %d\n", freeplaces);
                 board();
                 do
                 {
