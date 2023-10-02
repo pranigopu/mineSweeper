@@ -9,7 +9,7 @@ int main()
     {
         for(i = 0; i < MAX; i++)
             display[i] = ' ';
-        system("clear");
+        printf("\e[1;1H\e[2J"); // A regex for a clear console (it is not OS-specific)
         printf("\nDEADLY MINEFIELD\n(a. k. a. minesweeper)\n\n");
         printf("You are trapped in a dungeon filled with hidden mines ready to detonate. Find them all!\n");
         printf("\nEnter ? to know the game\nEnter x to exit\nEnter anything else to play\n");
@@ -34,13 +34,13 @@ int main()
                 printf("\nYou can select multiple positions by separating each position with a '+' sign, like\n");
                 printf("2,3 + 4,5\n");
 
-                printf("\nIf the selected position doesn't have a mine, then you will see\n");
+                printf("\nIf the selected position doesn't have a mine, then you will see:\n");
                 printf("1. The number of mines around the selected position\n");
                 printf("2. The number of mines around the adjacent positions, if they don't contain mines\n");
                 printf("\nIf you want to mark a place that you think has a mine, prefix the position with an 'f'.\n");
                 printf("e.g. f2,3\n");
                 printf("\nYou can flag multiple positions like\n");
-                printf("f2,3 + 4,5\nThis will flag both (2,3) and (4,5)\n");
+                printf("f2,3 + 4,5\nThis will flag both (2,3) and (4,5).\n");
                 printf("\nDon't worry about spacing, just be mindful of the order.\n");
                 
                 printf("\nIf you uncover all positions without selecting a mine and mark all the mines, you win.\n\n");
